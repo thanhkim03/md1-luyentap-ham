@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+</head>
+<style>
+/*table tr td {*/
+/*    border:1px;*/
+/*}*/
+</style>
+<body>
+<table >
+    <tr>
+        <td><input type="text" id="sanphammoi"></td>
+        <td colspan="2"><button onclick="taomoisp()">thêm</button></td>
+    </tr>
+</table>
+<h1>Hiển thị sản phẩm</h1>
+<table border="1" style="width: 100%">
+    <tr>
+        <th>stt</th>
+        <th>name</th>
+    </tr>
+    <tbody id="drawTable">
+    </tbody>
+</table>
+</body>
+<script>
+    let tenSanPham =['vertu','iphone','oppo','nokia']
+    function sanPham() {
+        let noiDung='';
+        for (let i=0;i<tenSanPham.length;i++){
+
+            noiDung += '<tr>' + '<td>'+(i+1)+'</td>' + '<td>'+tenSanPham[i]+'</td>' +'</tr>'
+
+        }
+        document.getElementById('drawTable').innerHTML=noiDung
+    }
+    sanPham()
+</script>
+</html>

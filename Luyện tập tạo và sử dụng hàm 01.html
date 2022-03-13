@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài 1-->
+<!--<script>-->
+<!--    function alertMessage() {-->
+<!--        return 'xin chào'-->
+<!--    }document.write(alertMessage())-->
+<!--</script>-->
+<!--bài 2-->
+<!--<script>-->
+<!--    function arr(number) {-->
+<!--        let a = number -1-->
+<!--        return a-->
+<!--    }let b = prompt('nhập sô')-->
+<!--    document.write(arr(b))-->
+<!--</script>-->
+<!--bài 3-->
+<!--<script>-->
+<!--    function arr(a,b) {-->
+<!--        if (a>b){-->
+<!--            document.write(a+" lớn hơn "+b)-->
+<!--        }else {-->
+<!--            let c = b+a-->
+<!--            document.write(" tổng hai số là "+c)-->
+<!--        }-->
+<!--    }-->
+<!--    arr(4,5)-->
+<!--</script>-->
+<!--bài 4-->
+<!--<script>-->
+<!--    function addNumbers() {-->
+<!--        firstNum = 4;-->
+<!--        secondNum = 8;-->
+<!--        result = firstNum + secondNum;-->
+<!--        alert(result)-->
+<!--        return result;-->
+<!--    }-->
+<!--    result = 0;-->
+<!--    alert (result)-->
+<!--    result = addNumbers();-->
+<!--</script>-->
+<!--bài 5-->
+<script>
+    let arr=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+    let arr1=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    function azx(a) {
+        let y = arr.indexOf(a);
+        if (y == -1) {
+            return alert('sai tên rồi bro!');
+        } else {
+            return alert(arr1[y]);
+        }
+    }    let x = prompt('NAME :');
+        document.write(azx(x));
+</script>
+</body>
+</html>

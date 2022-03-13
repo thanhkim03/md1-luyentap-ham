@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA SỐ NGUYÊN tố</title>
+</head>
+<body>
+<SCRIPT>
+    // function kiemTraSoNguyen(a){
+    //     if (a<2) return false;
+    //     else {
+    //         if (a<4) return true;
+    //         else {
+    //             for (i=2;i<a-1;i++){
+    //                 if (a%i==0) return false;
+    //             }
+    //             return true;
+    //         }
+    //     }
+    // }
+    // function inRaSoNguyen(a){
+    //     let i = 0;
+    //     let count = 0;
+    //     while (count<a){
+    //         if (kiemTraSoNguyen(i)){
+    //             document.write(i+',');
+    //             count++
+    //         }
+    //         i++
+    //     }
+    // }
+    // inRaSoNguyen(1000)
+    let c = prompt('nhập chuỗi')
+    function chuoi(a) {
+        if (a.length<=1){
+            return true
+        }else {
+            if (a[0] !== a[a.length-1] ){
+                return false
+            }
+        }return chuoi(a.substring(1,a.length-1))
+    }
+    document.write(chuoi(c))
+</SCRIPT>
+</body>
+</html>

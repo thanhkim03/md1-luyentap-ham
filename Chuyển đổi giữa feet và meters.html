@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="ipn1" type="number" placeholder="nhập độ foot">
+<button onclick="abc()">kết quả</button>
+<p id="in ra"></p>
+<br/>
+<input id="ipn2" type="number" placeholder="nhập độ meter">
+<button onclick="abcd()">kết quả</button>
+<p id="in ra2">
+</p>
+<script>
+    function footToMeter(foot){
+        return 0.305 * foot
+    }
+    function meterToFoot(meter){
+        return 3.279 * meter
+    }
+    function abc() {
+        let a = document.getElementById("ipn1").value;
+        document.getElementById("in ra").innerHTML=(footToMeter(a)+'meter')}
+        function abcd() {
+        let b = document.getElementById("ipn2").value;
+        document.getElementById("in ra2").innerHTML=(meterToFoot(b)+'foot')
+    }
+</script>
+</body>
+</html>
